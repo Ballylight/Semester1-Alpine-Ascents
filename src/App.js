@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import HeroSection from './components/HeroSection/HeroSection';
 import ClimbingDisciplines from './components/ClimbingDisciplines/ClimbingDisciplines';
