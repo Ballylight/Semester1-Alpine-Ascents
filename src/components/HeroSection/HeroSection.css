@@ -1,0 +1,336 @@
+/* .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 3rem; 
+    font-weight: 700; 
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.125rem; 
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+.hero-controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+    width: 40%;
+}
+
+.control-item {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.control-item span {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.control-item p {
+    font-size: 1rem;
+    color: #888;
+    margin-top: 0.5rem;
+}
+
+.search-button {
+    background-color: #008cba;
+    color: #fff;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #007b8d; 
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-controls {
+        width: 100%;
+        flex-direction: row;
+        gap: 0.75rem;
+    }
+
+    .hero-image {
+        margin-top: 2rem;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+/* .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 2rem;
+} */
+
+/* .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 0rem;
+
+    width: calc(100% - 2rem); 
+    max-width: 90vw; 
+    height: calc(100% - 4rem);
+    max-height: 590px; 
+
+    margin: 1rem auto 0 auto;
+    position: relative;
+}
+
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    max-width: 1200px;
+    gap: 2rem;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.25rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 95px;
+    margin-left: 60px;
+} */
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Ensures vertical centering */
+    align-items: center;
+    /* Ensures horizontal centering */
+    position: relative;
+    /* padding: 2rem;  */
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* max-width: 85%; */
+    width: 90%;
+    /* max-height: 70vh; */
+    margin: 0 auto;
+    height: 100%;
+    /* Ensures the section takes full height */
+    top: 3rem;
+    box-sizing: border-box;
+}
+
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two equal columns */
+    gap: 2rem;
+    /* Space between the grid items */
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    text-align: left;
+}
+
+.floating-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    box-sizing: border-box;
+    padding-bottom: 2rem;
+    align-items: center;
+}
+
+.hero-text {
+    color: #333;
+    box-sizing: border-box;
+    padding-left: 2rem;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: fit;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.floating-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #ffffff;
+    padding: 1rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.floating-menu .control-item {
+    text-align: center;
+}
+
+.floating-menu .control-item span {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.floating-menu .control-item p {
+    font-size: 1rem;
+    color: #888;
+}
+
+.search-button {
+    background-color: #008cba;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.125rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button:hover {
+    background-color: #007b8d;
+}
+
+.travel-icon {
+    margin-left: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .floating-menu {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .floating-menu .control-item {
+        margin-bottom: 1rem;
+    }
+}

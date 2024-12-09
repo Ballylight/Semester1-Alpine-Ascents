@@ -1,0 +1,66 @@
+/* Apply the Poppins font globally */
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Container Styling */
+  .history-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 1rem;
+    background-color: #f9f9f9;
+  }
+  
+  /* Left Section Styling */
+  .history-left {
+    flex: 1;
+  }
+  
+  .history-heading-small {
+    font-size: 0.7rem;
+    color: #1e90ff; /* Blue color for emphasis */
+    margin: 0;
+    font-weight: 600; /* Medium weight */
+    text-align: left;
+  }
+  
+  .history-heading-large {
+    font-size: 2.3rem;
+    text-align: left;
+    font-weight: 700; /* Bold */
+    color: #333;
+    margin-top: 0.5rem;
+  }
+  
+  /* Right Section Styling */
+  .history-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    flex: 2;
+  }
+  
+  .history-card {
+    border: 1px;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  
+  .history-card-title {
+    font-size: 1.2rem;
+    font-weight: 600; /* Semi-bold */
+    margin: 0;
+    color: #444;
+    text-align: left;
+  }
+  
+  .history-card-text {
+    font-size: 0.87rem;
+    font-weight: 300; /* Light weight */
+    color: #666;
+    margin-top: 0.5rem;
+    text-align: left;
+  }
+  
