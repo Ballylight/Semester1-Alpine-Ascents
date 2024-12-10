@@ -3,16 +3,24 @@ import './App.css';
 import HeroSection from './components/HeroSection/HeroSection';
 import ClimbingDisciplines from './components/ClimbingDisciplines/ClimbingDisciplines';
 import Footer from './components/Footer/Footer';
+import History from './components/History/History';
+import Blog from './components/Blog/Blogpage';
+
 
 function App() {
   return (
     <div className="App">
-      {/* Hero Section */}
       <HeroSection />
-      {/* Placeholder for other sections */}
+
+      <History />
+
       <div id="other-sections"></div>
-        <ClimbingDisciplines />
-        <Footer />
+
+      <ClimbingDisciplines />
+
+      <Blog />
+
+      <Footer />
     </div>
   );
 }
