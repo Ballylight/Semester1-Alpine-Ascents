@@ -88,20 +88,85 @@ a:hover {
   color: #7ccfef;
 }
 
-/* Media query for small screens */
-@media (max-width: 768px) {
+/* Media query for 1024px */
+@media (max-width: 1024px) {
   .footer-content {
-    flex-direction: column; /* Stack the footer-left and footer-right sections */
+    flex-wrap: wrap; /* Allow items to wrap */
+  }
+
+  .footer-left {
+    max-width: 250px;
+  }
+
+  .footer-right {
+    max-width: 600px;
+    justify-content: space-around; /* Adjust spacing */
+  }
+}
+
+/* Media query for 764px */
+@media (max-width: 764px) {
+  .footer-content {
+    flex-direction: column; /* Stack sections vertically */
     align-items: flex-start;
   }
 
   .footer-right {
-    max-width: 100%; /* Allow footer-right to take full width on small screens */
-    margin-top: 20px; /* Add space above the right section */
+    max-width: 100%; /* Allow full width */
+    margin-top: 20px;
   }
 
   .footer-left {
-    max-width: 100%; /* Allow footer-left to take full width on small screens */
-    margin-bottom: 20px; /* Add space below the left section */
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-menu,
+  .footer-history,
+  .footer-social-media {
+    margin-right: 20px;
+  }
+}
+
+/* Media query for 480px */
+@media (max-width: 480px) {
+  .footer-logo-font {
+    font-size: 20px; /* Smaller font for logo text */
+  }
+
+  h4 {
+    font-size: 14px; /* Adjust heading size */
+  }
+
+  li {
+    margin-bottom: 6px; /* Reduce spacing between items */
+  }
+
+  .footer-container {
+    padding: 30px 15px; /* Reduce padding */
+  }
+}
+
+/* Media query for 360px */
+@media (max-width: 360px) {
+  .footer-logo {
+    width: 25px; /* Smaller logo size */
+  }
+
+  .footer-logo-font {
+    font-size: 18px; /* Further reduce logo font size */
+  }
+
+  h4 {
+    font-size: 12px; /* Smaller heading size */
+  }
+
+  li {
+    font-size: 12px; /* Smaller font for list items */
+    margin-bottom: 4px; /* Further reduce spacing */
+  }
+
+  .footer-container {
+    padding: 20px 10px; /* Minimal padding */
   }
 }

@@ -181,8 +181,9 @@ body {
   /* Media query for 1024px and below (Tablet landscape) */
   @media (max-width: 1024px) {
     .categories {
-      gap: 15px; /* Reduce spacing between categories */
-      flex-wrap: wrap; /* Wrap categories to fit in rows */
+      /* gap: 15px; 
+      flex-wrap: wrap;  */
+      display: none;
     }
   
     .category {
