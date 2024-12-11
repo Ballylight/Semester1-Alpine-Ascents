@@ -89,7 +89,7 @@ a:hover {
 }
 
 /* Media query for small screens */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .footer-content {
     flex-direction: column; /* Stack the footer-left and footer-right sections */
     align-items: flex-start;

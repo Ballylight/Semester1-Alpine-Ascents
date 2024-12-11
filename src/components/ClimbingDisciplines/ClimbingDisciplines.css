@@ -8,46 +8,56 @@ body {
 }
 
 .climbing-section {
-    padding: 2rem;
+    padding: 1.5rem;
     text-align: center;
-    background-color: white; /* Set the climbing section background to white */
+    background-color: white;
+    margin-bottom: 50px;
 }
 
 .section-title {
-    font-size: 2rem;
+    font-size: 1.8rem; /* Slightly smaller font size */
     font-weight: bold;
     margin-bottom: 0.5rem;
-    color: #333; /* Slightly darker for better readability */
+    color: #333;
 }
 
 .section-subtitle {
-    font-size: 1rem;
+    font-size: 0.9rem; /* Slightly smaller subtitle text */
     color: #555;
-    margin-bottom: 2rem;
-    max-width: 700px; /* Limits subtitle width for better focus */
+    margin-bottom: 1.5rem;
+    max-width: 600px; /* Reduced width for better focus */
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
 }
 
 .disciplines-container {
+    margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Wider columns for better layout */
-    gap: 2.6em;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Default responsive grid */
+    gap: 2rem; /* Spacing between cards */
     justify-items: center;
 }
 
+/* Ensure 4 rows of 4 items each on fullscreen desktop */
+@media (min-width: 1200px) {
+    .disciplines-container {
+        grid-template-columns: repeat(4, 1fr); /* Force 4 items per row */
+        grid-auto-rows: auto; /* Ensure rows adjust to content */
+        gap: 1.4rem; /* Slightly smaller gap for compact layout */
+
+    }
+}
 
 .discipline-card {
     perspective: 1000px; /* Enables 3D perspective for the flip */
-    width: 100%;
-    max-width: 360px;
-    height: 490px; /* Ensures consistent card height */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.23); 
+    width: 95%;
+    max-width: 400px; /* Reduced card width */
+    height: 490px; /* Reduced card height */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Slightly lighter shadow */
     position: relative; /* Allows positioning of card sides */
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-top-left-radius: 15px ;
-    border-top-right-radius: 15px;
+    border-radius: 12px; /* Slightly reduced corner radius */
+    margin-top: 7px;
 }
 
 .discipline-card .card-front,
@@ -56,10 +66,10 @@ body {
     height: 100%;
     position: absolute;
     backface-visibility: hidden; /* Hides the back face when flipped */
-    border-radius: 15px; /* Keeps the corner radius consistent */
+    border-radius: 12px; /* Keeps the corner radius consistent */
     overflow: hidden;
     transition: transform 0.6s ease-in-out; /* Smooth flip animation */
-    box-sizing: border-box; /* Ensures padding doesn't exceed container size */
+    box-sizing: border-box;
 }
 
 /* Front of the card */
@@ -70,19 +80,16 @@ body {
 /* Back of the card */
 .discipline-card .card-back {
     transform: rotateY(180deg); /* Back face is hidden initially */
-    padding: 1rem;
-    background-color: #f9f9f9; /* Light background for the back */
+    padding: 0.8rem; /* Reduced padding */
+    background-color: #f9f9f9;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
     text-align: center;
-    box-sizing: border-box; /* Ensures consistent size with the front */
-    max-width: 360px; /* Matches the width of the front */
-    height: 490px; /* Matches the height of the front */
+    position: relative; /* Positioning relative for absolute child elements */
 }
 
-/* Flipped state */
 .discipline-card.flipped .card-front {
     transform: rotateY(-180deg); /* Hides the front when flipped */
 }
@@ -91,96 +98,111 @@ body {
     transform: rotateY(0deg); /* Shows the back when flipped */
 }
 
-/* Existing Styles for Card Front */
 .discipline-image {
     width: 100%;
-    height: 60%; /* Adjusted for better aspect ratio */
-    object-fit: cover; /* Ensures proper scaling without distortion */
-    margin: 0; /* Removes any extra margin around the image */
-    display: block; /* Ensures no space below the image */
+    height: 50%; /* Slightly smaller aspect ratio */
+    object-fit: cover;
+    margin: 0;
+    display: block;
 }
 
 .rating {
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #ff9800;
     font-weight: bold;
 }
 
 .discipline-content {
-    padding: 0 1rem; /* Adjusted padding for tighter alignment */
-    text-align: left; /* Left-aligns the content */
+    padding: 0 0.8rem; /* Reduced padding */
+    text-align: left;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Aligns content to the top */
-    gap: 0.2rem; /* Reduces spacing between title and technique */
-    margin-top: 10px; /* Ensures no margin between image and content */
-    flex-grow: 1; /* Ensures content stays closer to the top */
+    justify-content: flex-start;
+    gap: 0.2rem;
+    margin-top: 5px;
 }
 
 .discipline-title {
-    font-size: 1.2rem; /* Slightly larger for emphasis */
+    font-size: 1rem; /* Slightly smaller for emphasis */
     font-weight: bold;
-    margin: 0; /* Eliminates margin around the title */
+    margin: 0;
     color: #333;
-    text-align: left; /* Left-aligns the title */
 }
 
 .discipline-technique {
-    font-size: 0.9rem;
+    font-size: 0.9rem; /* Slightly smaller technique text */
     color: #555;
+    font-weight: 500;
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Left-aligns icon and text */
-    margin: 0; /* Ensures no extra margins */
 }
 
 .hiking-icon {
-    margin-right: 0.5rem;
+    margin-right: 0.4rem;
     color: #7b7b7b;
 }
 
 .card-footer {
+    position: absolute; /* Ensures the button is positioned relative to the card */
+    bottom: 10px; /* Aligns to the bottom of the card */
+    right: 10px; /* Aligns to the right of the card */
     display: flex;
-    justify-content: flex-end; /* Aligns the button to the bottom-right */
+    justify-content: flex-end;
     align-items: center;
-    margin-top: 4rem; /* Pushes the "See More" button to the bottom */
 }
 
 .see-more-btn {
     background-color: #00AFD5;
     color: white;
-    padding: 0.7rem 1.4rem; /* Increased size for larger button */
+    padding: 0.5rem 1rem; /* Slightly smaller button */
     border: none;
-    border-radius: 15px; /* Larger radius for a softer look */
+    border-radius: 12px;
     cursor: pointer;
-    font-size: 1rem; /* Increased font size for better readability */
-    font-weight: 500; /* Slightly bold for better emphasis */
+    font-size: 0.9rem; /* Slightly smaller font */
+    font-weight: 500;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds slight shadow for emphasis */
 }
 
 .see-more-btn:hover {
-    background-color: #009ab8; /* Darker shade for hover effect */
+    background-color: #009ab8;
 }
 
-/* Card Back Styles */
 .card-back p {
-    font-size: 1rem;
-    margin-bottom: 1rem;
+    font-size: 0.9rem; /* Slightly smaller back text */
+    margin-bottom: 0.6rem;
 }
 
 .flip-back-btn {
     background-color: #00AFD5;
     color: white;
-    padding: 0.7rem 1.4rem;
+    padding: 0.5rem 1rem;
     border: none;
-    border-radius: 15px;
+    border-radius: 12px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
+    margin-top: 1rem; /* Adds spacing between text and button */
 }
 
 .flip-back-btn:hover {
     background-color: #009ab8;
+}
+
+/* 2 Columns for Medium Screens */
+@media (max-width: 1135px) {
+    .disciplines-container {
+        grid-template-columns: repeat(2, 1fr); /* Display 2 items per row */
+        gap: 1.5rem; /* Adjust spacing for medium screens */
+    }
+}
+
+/* 1 Column for Smaller Screens */
+@media (max-width: 768px) {
+    .disciplines-container {
+        grid-template-columns: 1fr; /* Display 1 item per row */
+        gap: 1.5rem; /* Maintain spacing for smaller screens */
+    }
 }
