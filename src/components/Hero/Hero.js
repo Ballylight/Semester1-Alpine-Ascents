@@ -173,7 +173,7 @@
 
 
 import React, { useState, useEffect } from 'react';
-import './HeroSection.css';
+import './Hero.css';
 import Modal from '../Modal/Modal';
 import mountainData from '../../assets/json/mountains.json';
 import mountainImage from '../../assets/images/mountain.jpg';

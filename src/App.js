@@ -1,18 +1,27 @@
 // import logo from './logo.svg';
 import './App.css';
-import HeroSection from './components/HeroSection/HeroSection';
 import ClimbingDisciplines from './components/ClimbingDisciplines/ClimbingDisciplines';
 import Footer from './components/Footer/Footer';
 import History from './components/History/History';
 import Blog from './components/Blog/Blogpage';
+import Header from './components/Header/Header';
+import Hero from './components/Hero/Hero';
+import Sheltering from './components/Sheltering/Sheltering';
+
+
 
 
 function App() {
   return (
     <div className="App">
-      <HeroSection />
+      <Header />
+
+      <Hero/>
 
       <History />
+
+      <Sheltering />
+
 
       <div id="other-sections"></div>
 

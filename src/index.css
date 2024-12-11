@@ -14,7 +14,6 @@ code {
 
 /* Utility classes (optional) */
 .container {
-  max-width: 1200px;
+  max-width: 1350px;
   margin: 0 auto;
-  padding: 1rem;
 }
