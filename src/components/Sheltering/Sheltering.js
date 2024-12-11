@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './Sheltering.css';
 import { FaMapMarkerAlt } from 'react-icons/fa'; // Location icon
-// import firstCab from '../../images/firstcab.png'; 
-// import secCab from '../../images/seccab.jpg'; 
+import firstCab from '../../images/firstcab.jpg'; 
+import secCab from '../../images/seccab.jpg'; 
 
 const Sheltering = () => {
   const [isActive, setIsActive] = useState(true);
@@ -19,7 +19,7 @@ const Sheltering = () => {
           onMouseEnter={() => handleHover('left')}
           onMouseLeave={() => setIsActive(true)} // Restore the active state when mouse leaves
         >
-          {/* <img src={firstCab} alt="Cozy Cabin - Semeru" /> */}
+          <img src={firstCab} alt="Cozy Cabin - Semeru" />
           <div className="image-overlay">
             <div className="stars">★★★★★</div>
             <h4>Cozy Cabin - Semeru</h4>
@@ -32,7 +32,7 @@ const Sheltering = () => {
           className="image-card"
           onMouseEnter={() => handleHover('right')}
         >
-          {/* <img src={secCab} alt="Tranquil Retreat - Bromo" /> */}
+          <img src={secCab} alt="Tranquil Retreat - Bromo" />
           <div className="image-overlay">
             <div className="stars">★★★★★</div>
             <h4>Tranquil Retreat - Bromo</h4>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
-// import Logo from "../../images/Loogo.jpg";
+import Logo from "../../images/Loogo.jpg";
 
 const Header = () => {
   const [activeMenu, setActiveMenu] = useState("Home");
@@ -36,7 +36,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo-container">
-        {/* <img src={Logo} alt="Alpine Ascents Logo" className="logo" /> */}
+        <img src={Logo} alt="Alpine Ascents Logo" className="logo" />
         <span className="site-title">Alpine Ascents</span>
       </div>
 
