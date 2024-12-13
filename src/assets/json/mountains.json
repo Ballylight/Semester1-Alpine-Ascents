@@ -1,15 +1,142 @@
 [
-    {
+  {
       "name": "Semeru",
       "location": "Indonesia",
       "elevation": "3676 meters",
-      "description": "A breathtaking mountain with picturesque views."
-    },
-    {
+      "description": "A breathtaking mountain with picturesque views.",
+      "coordinates": { "latitude": -8.1081, "longitude": 112.9222 }
+  },
+  {
       "name": "Fuji",
       "location": "Japan",
       "elevation": "3776 meters",
-      "description": "A symbol of Japan, offering a majestic climb."
-    }
-  ]
-  
+      "description": "A symbol of Japan, offering a majestic climb.",
+      "coordinates": { "latitude": 35.3606, "longitude": 138.7274 }
+  },
+  {
+      "name": "Everest",
+      "location": "Nepal/China",
+      "elevation": "8848 meters",
+      "description": "The highest mountain in the world and a legendary climb.",
+      "coordinates": { "latitude": 27.9881, "longitude": 86.9250 }
+  },
+  {
+      "name": "K2",
+      "location": "Pakistan/China",
+      "elevation": "8611 meters",
+      "description": "Known as the Savage Mountain for its challenging ascent.",
+      "coordinates": { "latitude": 35.8808, "longitude": 76.5158 }
+  },
+  {
+      "name": "Denali",
+      "location": "United States (Alaska)",
+      "elevation": "6190 meters",
+      "description": "The highest peak in North America with awe-inspiring views.",
+      "coordinates": { "latitude": 63.0695, "longitude": -151.0074 }
+  },
+  {
+      "name": "Kilimanjaro",
+      "location": "Tanzania",
+      "elevation": "5895 meters",
+      "description": "The tallest mountain in Africa, known for its biodiversity.",
+      "coordinates": { "latitude": -3.0674, "longitude": 37.3556 }
+  },
+  {
+      "name": "Aconcagua",
+      "location": "Argentina",
+      "elevation": "6960 meters",
+      "description": "The highest peak in South America, ideal for experienced climbers.",
+      "coordinates": { "latitude": -32.6532, "longitude": -70.0109 }
+  },
+  {
+      "name": "Elbrus",
+      "location": "Russia",
+      "elevation": "5642 meters",
+      "description": "A dormant volcano and the highest peak in Europe.",
+      "coordinates": { "latitude": 43.3499, "longitude": 42.4453 }
+  },
+  {
+      "name": "Vinson",
+      "location": "Antarctica",
+      "elevation": "4892 meters",
+      "description": "A remote mountain in Antarctica's icy wilderness.",
+      "coordinates": { "latitude": -78.5260, "longitude": -85.6170 }
+  },
+  {
+      "name": "Mont Blanc",
+      "location": "France/Italy",
+      "elevation": "4807 meters",
+      "description": "The highest peak in the Alps, popular for skiing and climbing.",
+      "coordinates": { "latitude": 45.8326, "longitude": 6.8652 }
+  },
+  {
+      "name": "Matterhorn",
+      "location": "Switzerland/Italy",
+      "elevation": "4478 meters",
+      "description": "A stunning, pyramid-shaped mountain in the Alps.",
+      "coordinates": { "latitude": 45.9763, "longitude": 7.6586 }
+  },
+  {
+      "name": "Table Mountain",
+      "location": "South Africa",
+      "elevation": "1085 meters",
+      "description": "Famous for its flat top and panoramic views of Cape Town.",
+      "coordinates": { "latitude": -33.9628, "longitude": 18.4098 }
+  },
+  {
+      "name": "Makalu",
+      "location": "Nepal/China",
+      "elevation": "8485 meters",
+      "description": "A stunning mountain with sharp ridges and challenging climbs.",
+      "coordinates": { "latitude": 27.8897, "longitude": 87.0888 }
+  },
+  {
+      "name": "Lhotse",
+      "location": "Nepal/China",
+      "elevation": "8516 meters",
+      "description": "Close to Everest, known for its steep vertical walls.",
+      "coordinates": { "latitude": 27.9617, "longitude": 86.9332 }
+  },
+  {
+      "name": "Cho Oyu",
+      "location": "Nepal/China",
+      "elevation": "8188 meters",
+      "description": "The sixth-highest mountain in the world, offering easier climbs.",
+      "coordinates": { "latitude": 28.0944, "longitude": 86.6608 }
+  },
+  {
+      "name": "Mount St. Helens",
+      "location": "United States (Washington)",
+      "elevation": "2549 meters",
+      "description": "Known for its 1980 volcanic eruption and fascinating geology.",
+      "coordinates": { "latitude": 46.1912, "longitude": -122.1944 }
+  },
+  {
+      "name": "Rainier",
+      "location": "United States (Washington)",
+      "elevation": "4392 meters",
+      "description": "A majestic volcano with glaciers and wildflower meadows.",
+      "coordinates": { "latitude": 46.8523, "longitude": -121.7603 }
+  },
+  {
+      "name": "Annapurna",
+      "location": "Nepal",
+      "elevation": "8091 meters",
+      "description": "Known for its deadly ascents and breathtaking scenery.",
+      "coordinates": { "latitude": 28.5961, "longitude": 83.8203 }
+  },
+  {
+      "name": "Olympus",
+      "location": "Greece",
+      "elevation": "2917 meters",
+      "description": "Fabled as the home of the Greek gods in mythology.",
+      "coordinates": { "latitude": 40.0854, "longitude": 22.3586 }
+  },
+  {
+      "name": "Mount Cook",
+      "location": "New Zealand",
+      "elevation": "3724 meters",
+      "description": "The tallest peak in New Zealand, surrounded by glaciers.",
+      "coordinates": { "latitude": -43.5950, "longitude": 170.1412 }
+  }
+]
