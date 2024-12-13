@@ -13,9 +13,9 @@ import climb from "./Assets/climb.jpg";
 // Data for Categories
 const categories = [
   { image: equipment, label: "Equipment" },
-  { image: shelter, label: "Shelter"},
-  { image: location, label: "Location"},
-  { image: news, label: "news"},
+  { image: shelter, label: "Shelter" },
+  { image: location, label: "Location" },
+  { image: news, label: "news" },
 ];
 
 // Data for Blogs
@@ -48,28 +48,28 @@ const BlogPage = () => {
   return (
     <div className="blog-page">
       {/* Header Section */}
-      <header className="header">
+      <header className="head">
         <h1>Embark on Life's Greatest Travel Adventures Today</h1>
       </header>
 
       {/* Categories Section */}
-            <div className="categories">
+      <div className="categories">
         {categories.map((category, index) => (
-            <div key={index} className="category">
+          <div key={index} className="category">
             <div className="image-container">
-                <img 
-                src={category.image} 
-                alt={category.label} 
-                className="category-image" 
-                // style={category.label === "Equipment" ? { width: "112%", marginLeft: "-8%" } : {}}
-                />
-                <button className="equipment-button">
-                 {category.label} &#8594;
-                </button>
+              <img
+                src={category.image}
+                alt={category.label}
+                className="category-image"
+              // style={category.label === "Equipment" ? { width: "112%", marginLeft: "-8%" } : {}}
+              />
+              <button className="equipment-button">
+                {category.label} &#8594;
+              </button>
             </div>
-            </div>
+          </div>
         ))}
-        </div>
+      </div>
 
       {/* Blog Section */}
       <div className="blogs">

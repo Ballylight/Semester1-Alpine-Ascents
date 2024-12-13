@@ -15,6 +15,7 @@ const ClimbingDisciplines = () => {
     {
       title: "Alpine Mountaineering",
       technique: "Fast and Light Ascent",
+      hazard: "Exposure to extreme weather conditions",
       image: alpine,
       rating: 4.5,
       description:
@@ -23,6 +24,7 @@ const ClimbingDisciplines = () => {
     {
       title: "Expedition Mountaineering",
       technique: "Fixed Rope Setup",
+      hazard: "Altitude sickness during prolonged climbs",
       image: expedition,
       rating: 4.8,
       description:
@@ -31,6 +33,7 @@ const ClimbingDisciplines = () => {
     {
       title: "Ice Climbing",
       technique: "Ice Tool Placement",
+      hazard: "Falling ice shards during ascents",
       image: iceclimbing,
       rating: 5.0,
       description:
@@ -39,6 +42,7 @@ const ClimbingDisciplines = () => {
     {
       title: "Rock Climbing",
       technique: "Lead Climbing",
+      hazard: "Falling due to gear failure or misplacement",
       image: rockclimbing,
       rating: 4.3,
       description:
@@ -47,6 +51,7 @@ const ClimbingDisciplines = () => {
     {
       title: "Ski Mountaineering",
       technique: "Skinning",
+      hazard: "Avalanche risk on steep snow slopes",
       image: ski,
       rating: 4.7,
       description:
@@ -55,6 +60,7 @@ const ClimbingDisciplines = () => {
     {
       title: "Altitude Climbing",
       technique: "Acclimatization",
+      hazard: "Hypoxia due to low oxygen levels",
       image: high,
       rating: 5.0,
       description:
@@ -63,6 +69,7 @@ const ClimbingDisciplines = () => {
     {
       title: "Mixed Climbing",
       technique: "Dry Tooling",
+      hazard: "Equipment failure on mixed surfaces",
       image: mixed,
       rating: 4.8,
       description:
@@ -71,6 +78,7 @@ const ClimbingDisciplines = () => {
     {
       title: "Big Wall Climbing",
       technique: "Aid Climbing",
+      hazard: "Prolonged exposure to sheer drops",
       image: bigwall,
       rating: 4.9,
       description:
@@ -100,6 +108,7 @@ const FlipCard = ({ discipline }) => {
 
   return (
     <div className={`discipline-card ${isFlipped ? "flipped" : ""}`}>
+      {/* Front of the Card */}
       <div className="card-front">
         <img
           src={discipline.image}
@@ -126,8 +135,13 @@ const FlipCard = ({ discipline }) => {
           </div>
         </div>
       </div>
+
+      {/* Back of the Card */}
       <div className="card-back">
         <p className="card-description">{discipline.description}</p>
+        <p className="card-hazard">
+          <strong>Hazard:</strong> {discipline.hazard}
+        </p>
         <button
           className="flip-back-btn"
           onClick={(e) => {

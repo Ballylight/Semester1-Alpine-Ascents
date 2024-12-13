@@ -1,4 +1,5 @@
 // import logo from './logo.svg';
+import React, { useRef } from 'react';
 import './App.css';
 import ClimbingDisciplines from './components/ClimbingDisciplines/ClimbingDisciplines';
 import Footer from './components/Footer/Footer';
@@ -8,28 +9,56 @@ import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Sheltering from './components/Sheltering/Sheltering';
 
-
-
-
 function App() {
+  const homeRef = useRef(null);
+  const historyRef = useRef(null);
+  const shelteringRef = useRef(null);
+  const climbingRef = useRef(null);
+
+  // Scroll to the specific section
+  const scrollToSection = (sectionId) => {
+    switch (sectionId) {
+      case 'home-section':
+        homeRef.current.scrollIntoView({ behavior: 'smooth' });
+        break;
+      case 'history-section':
+        historyRef.current.scrollIntoView({ behavior: 'smooth' });
+        break;
+      case 'sheltering-section':
+        shelteringRef.current.scrollIntoView({ behavior: 'smooth' });
+        break;
+      case 'climbing-section':
+        climbingRef.current.scrollIntoView({ behavior: 'smooth' });
+        break;
+      default:
+        break;
+    }
+  };
+  
   return (
     <div className="App">
       <Header />
 
-      <Hero/>
+      
+      <section id="home-section" ref={homeRef}>
+        <Hero />
+      </section>
 
-      <History />
+      <section id="history-section" ref={historyRef}>
+        <History />
+      </section>
 
-      <Sheltering />
+      <section id="sheltering-section" ref={shelteringRef}>
+        <Sheltering />
+      </section>
 
-
-      <div id="other-sections"></div>
-
-      <ClimbingDisciplines />
+      <section id="climbing-section" ref={climbingRef}>
+        <ClimbingDisciplines />
+      </section>
 
       <Blog />
 
-      <Footer />
+      <Footer scrollToSection={scrollToSection} />
     </div>
   );
 }

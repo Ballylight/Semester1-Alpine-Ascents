@@ -1,9 +1,10 @@
 import React from "react";
 import "./History.css";
 
+
 const History = () => {
   return (
-    <div className="history-container">
+    <div id="history" className="history-container">
       {/* Left Section */}
       <div className="history-left">
         <h3 className="history-heading-small">Our History</h3>

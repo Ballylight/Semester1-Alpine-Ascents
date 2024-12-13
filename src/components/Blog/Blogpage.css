@@ -2,313 +2,386 @@
    General Styling
 =========================== */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f7f7f7;
-  }
-  
-  .blog-page {
-    width: 90%;
-    margin: auto;
-    padding: 20px;
-    margin-top: 50px;
-  }
-  
-  /* ===========================
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+.blog-page {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/* ===========================
      Header Section
   =========================== */
-  .header {
-    text-align: center;
-    /* margin: 20px 0; */
-  }
-  
-  .header h1 {
-    font-family: Arial, sans-serif;
-    font-weight: 799;
-    font-size: 48.5px;
-    color: #333;
-    text-align: left;
-    max-width: 1100px;
-  }
-  
-  /* ===========================
+.head {
+  text-align: center;
+  /* margin: 20px 0; */
+}
+
+.head h1 {
+  font-family: Arial, sans-serif;
+  font-weight: 799;
+  font-size: 48.5px;
+  color: #333;
+  text-align: left;
+  max-width: 1100px;
+}
+
+/* ===========================
      Categories Section
   =========================== */
-  .categories {
-    display: flex;
-    gap: 20px; /* Space between each category */
-    justify-content: center; /* Center the categories horizontally */
-    margin: 20px 0;
-    width: 100%;
-    background-color: #f7f7f7;
-  }
-  
-  .category {
-    display: flex;
-    flex-direction: column; /* Ensures image and text stack */
-    align-items: center; /* Center align items */
-    justify-content: space-between; /* Distributes space evenly */
-    background-color: #f7f7f7;
-    border-radius: 10px;
-    padding: 20px; /* Adds inner spacing */
-    height: 150px; /* Increased height */
-    width: 100%; /* Adjust width to match height visually */
-  }
-  
-  .category img {
-    width: 100%; /* Image fills the width of its container */
-    height: 100%; /* Maintains aspect ratio */
-    border-radius: 8px; /* Optional: slightly round the corners of the image */
-    /* object-fit: cover; */
-  }
-  
-  /* ===========================
+.categories {
+  display: flex;
+  gap: 20px;
+  /* Space between each category */
+  justify-content: center;
+  /* Center the categories horizontally */
+  margin: 20px 0;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  /* Ensures image and text stack */
+  align-items: center;
+  /* Center align items */
+  justify-content: space-between;
+  /* Distributes space evenly */
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  padding: 20px;
+  /* Adds inner spacing */
+  height: 150px;
+  /* Increased height */
+  width: 100%;
+  /* Adjust width to match height visually */
+}
+
+.category img {
+  width: 100%;
+  /* Image fills the width of its container */
+  height: 100%;
+  /* Maintains aspect ratio */
+  border-radius: 8px;
+  /* Optional: slightly round the corners of the image */
+  /* object-fit: cover; */
+}
+
+/* ===========================
      Blog Section
   =========================== */
-  .blogs {
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Spacing between blog items */
-  }
-  
-  .blog-item {
-    display: flex; /* Side-by-side layout */
-    align-items: flex-start; /* Align items vertically */
-    gap: 15px; /* Space between date, image, and text */
-    padding: 20px; /* Increased padding for more height */
-    min-height: 150px; /* Sets a minimum height for each blog */
-  }
-  
-  /* Blog Date */
-  .blog-date {
-    display: flex;
-    flex-direction: column; /* Stack the number and text vertically */
-    align-items: center; /* Center-align the text */
-    justify-content: center; /* Center-align within the box */
-    font-size: 16px;
-    font-weight: bold;
-    color: #555;
-    background-color: #e0e0e0;
-    padding: 10px 15px; /* Extra padding for better visual balance */
-    border-radius: 8px; /* Slightly larger for a rounded box */
-    white-space: nowrap; /* Prevents text wrapping */
-    width: 50px; /* Set a fixed width */
-    height: 70px; /* Set a fixed height */
-  }
-  
-  .blog-date span {
-    display: block; /* Forces each line to be on its own */
-  }
-  
-  .blog-date .number {
-    font-size: 20px; /* Larger font size for the number */
-    font-weight: bold;
-  }
-  
-  .blog-date .text {
-    font-size: 14px; /* Slightly smaller font size for the month text */
-    font-weight: normal;
-    margin-top: 3px; /* Small spacing between number and text */
-  }
-  
-  /* Blog Image */
-  .blog-image {
-    width: 330px;
-    height: auto;
-    object-fit: cover; /* Ensures the image fits nicely */
-    border-radius: 5px;
-  }
-  
-  /* Blog Text */
-  .blog-text {
-    display: flex;
-    flex-direction: column;
-    flex: 1; /* Takes up remaining space */
-  }
-  
-  .blog-text h3 {
-    font-size: 30px;
-    color: #333;
-    margin: 0;
-    text-align: left;
-    padding-top: 40px;
-  }
-  
-  .blog-text h3:hover {
-    color: rgb(89, 5, 125); /* Changes to a blue shade on hover */
-    text-decoration: underline;
-  }
-  
-  .blog-text p {
-    font-size: 18px;
-    margin-top: 8px;
-    color: #666;
-    line-height: 1.5;
-    text-align: left;
-  }  
+.blogs {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* Spacing between blog items */
+}
 
-  .image-container {
-    position: relative; /* This ensures the button will be positioned relative to this container */
-    height: 100%;
-  }
-  
-  .equipment-button {
-    position: absolute;
-    bottom: 16px; /* Distance from the bottom */
-    right: 10px; /* Distance from the right */
-    padding: 8px 12px; /* Padding around the text */
-    font-size: 15px; /* Font size for the button text */
-    font-weight: 500;
-    height: 35px;
-    background-color: white; /* Dark background */
-    color: black; /* Button text color */
-    border: none; /* No border */
-    border-radius: 16px; /* Rounded corners */
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
+.blog-item {
+  display: flex;
+  /* Side-by-side layout */
+  align-items: flex-start;
+  /* Align items vertically */
+  gap: 15px;
+  /* Space between date, image, and text */
+  padding: 20px;
+  /* Increased padding for more height */
+  min-height: 150px;
+  /* Sets a minimum height for each blog */
+}
+
+/* Blog Date */
+.blog-date {
+  display: flex;
+  flex-direction: column;
+  /* Stack the number and text vertically */
+  align-items: center;
+  /* Center-align the text */
+  justify-content: center;
+  /* Center-align within the box */
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+  background-color: #e0e0e0;
+  padding: 10px 15px;
+  /* Extra padding for better visual balance */
+  border-radius: 8px;
+  /* Slightly larger for a rounded box */
+  white-space: nowrap;
+  /* Prevents text wrapping */
+  width: 50px;
+  /* Set a fixed width */
+  height: 70px;
+  /* Set a fixed height */
+}
+
+.blog-date span {
+  display: block;
+  /* Forces each line to be on its own */
+}
+
+.blog-date .number {
+  font-size: 20px;
+  /* Larger font size for the number */
+  font-weight: bold;
+}
+
+.blog-date .text {
+  font-size: 14px;
+  /* Slightly smaller font size for the month text */
+  font-weight: normal;
+  margin-top: 3px;
+  /* Small spacing between number and text */
+}
+
+/* Blog Image */
+.blog-image {
+  width: 330px;
+  height: auto;
+  object-fit: cover;
+  /* Ensures the image fits nicely */
+  border-radius: 5px;
+}
+
+/* Blog Text */
+.blog-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  /* Takes up remaining space */
+}
+
+.blog-text h3 {
+  font-size: 30px;
+  color: #333;
+  margin: 0;
+  text-align: left;
+  padding-top: 40px;
+}
+
+.blog-text h3:hover {
+  color: rgb(89, 5, 125);
+  /* Changes to a blue shade on hover */
+  text-decoration: underline;
+}
+
+.blog-text p {
+  font-size: 18px;
+  margin-top: 8px;
+  color: #666;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.image-container {
+  position: relative;
+  /* This ensures the button will be positioned relative to this container */
+  height: 100%;
+}
+
+.equipment-button {
+  position: absolute;
+  bottom: 16px;
+  /* Distance from the bottom */
+  right: 10px;
+  /* Distance from the right */
+  padding: 8px 12px;
+  /* Padding around the text */
+  font-size: 15px;
+  /* Font size for the button text */
+  font-weight: 500;
+  height: 35px;
+  background-color: white;
+  /* Dark background */
+  color: black;
+  /* Button text color */
+  border: none;
+  /* No border */
+  border-radius: 16px;
+  /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 
 /* General Responsive Styles for All Breakpoints */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f7f7f7;
-  }
-  
-  /* Media query for 1024px and below (Tablet landscape) */
-  @media (max-width: 1024px) {
-    .categories {
-      /* gap: 15px; 
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+/* Media query for 1024px and below (Tablet landscape) */
+@media (max-width: 1024px) {
+  .categories {
+    /* gap: 15px; 
       flex-wrap: wrap;  */
-      display: none;
-    }
-  
-    .category {
-      flex: 0 1 calc(33.33% - 15px); /* Three categories per row */
-      margin-bottom: 15px;
-    }
-  
-    .blog-item {
-      flex-direction: column; /* Stack blog content vertically */
-      align-items: center;
-    }
-  
-    .blog-date {
-      margin-bottom: 10px;
-      width: auto; /* Adjust width for stacked layout */
-      height: auto;
-    }
-  
-    .blog-image {
-      width: 100%; /* Full width of the container */
-    }
-  
-    .blog-text h3 {
-      font-size: 24px; /* Adjust font size */
-    }
+    display: none;
   }
-  
-  /* Media query for 768px and below (Tablet portrait) */
-  @media (max-width: 768px) {
-    .header h1 {
-      font-size: 32px; /* Reduce font size for smaller screens */
-    }
-  
-    .categories {
-      flex-wrap: wrap; /* Wrap categories to fit screen width */
-      gap: 10px; /* Reduce gap between categories */
-    }
-  
-    .category {
-      flex: 0 1 calc(50% - 10px); /* Two categories per row */
-      padding: 10px;
-    }
-  
-    .blogs {
-      gap: 10px; /* Reduce spacing between blogs */
-    }
-  
-    .blog-item {
-      gap: 10px; /* Reduce spacing between items */
-    }
-  
-    .blog-image {
-      width: 100%; /* Full width for images */
-    }
-  
-    .blog-text h3 {
-      font-size: 20px; /* Reduce font size */
-    }
-  
-    .equipment-button {
-      font-size: 14px; /* Reduce font size for buttons */
-      padding: 6px 10px; /* Adjust padding */
-    }
+
+  .category {
+    flex: 0 1 calc(33.33% - 15px);
+    /* Three categories per row */
+    margin-bottom: 15px;
   }
-  
-  /* Media query for 480px and below (Mobile landscape) */
-  @media (max-width: 480px) {
-    .header h1 {
-      font-size: 24px; /* Smaller font size for mobile */
-      text-align: center;
-    }
-  
-    .categories {
-      gap: 8px; /* Further reduce gap */
-      flex-direction: column; /* Stack categories vertically */
-      align-items: center; /* Center-align categories */
-    }
-  
-    .category {
-      flex: 1; /* Full width for each category */
-      max-width: 90%; /* Add some margin to edges */
-      height: 95%;
-    }
-  
-    .blogs {
-      gap: 8px; /* Reduce spacing */
-    }
-  
-    .blog-item {
-      padding: 10px; /* Reduce padding */
-    }
-  
-    .blog-text h3 {
-      font-size: 18px; /* Adjust font size */
-    }
+
+  .blog-item {
+    flex-direction: column;
+    /* Stack blog content vertically */
+    align-items: center;
   }
-  
-  /* Media query for 360px and below (Small mobile screens) */
-  @media (max-width: 360px) {
-    .header h1 {
-      font-size: 18px; /* Smaller font for compact screens */
-      text-align: center; /* Center-align text */
-    }
-  
-    .categories {
-      gap: 5px; /* Minimal gap between items */
-    }
-  
-    .category {
-      flex: 1; /* Full width for each category */
-      max-width: 99%; 
-      height: 100%;
-      padding: 8px;
-    }
-  
-    .blog-item {
-      padding: 8px; /* Less padding */
-    }
-  
-    .blog-text h3 {
-      font-size: 16px; /* Reduce font size for titles */
-    }
-  
-    .equipment-button {
-      font-size: 12px; /* Smaller button text */
-      padding: 4px 8px; /* Adjust padding */
-    }
-  }  
+
+  .blog-date {
+    margin-bottom: 10px;
+    width: auto;
+    /* Adjust width for stacked layout */
+    height: auto;
+  }
+
+  .blog-image {
+    width: 100%;
+    /* Full width of the container */
+  }
+
+  .blog-text h3 {
+    font-size: 24px;
+    /* Adjust font size */
+  }
+}
+
+/* Media query for 768px and below (Tablet portrait) */
+@media (max-width: 768px) {
+  .head h1 {
+    font-size: 32px;
+    /* Reduce font size for smaller screens */
+  }
+
+  .categories {
+    flex-wrap: wrap;
+    /* Wrap categories to fit screen width */
+    gap: 10px;
+    /* Reduce gap between categories */
+  }
+
+  .category {
+    flex: 0 1 calc(50% - 10px);
+    /* Two categories per row */
+    padding: 10px;
+  }
+
+  .blogs {
+    gap: 10px;
+    /* Reduce spacing between blogs */
+  }
+
+  .blog-item {
+    gap: 10px;
+    /* Reduce spacing between items */
+  }
+
+  .blog-image {
+    width: 100%;
+    /* Full width for images */
+  }
+
+  .blog-text h3 {
+    font-size: 20px;
+    /* Reduce font size */
+  }
+
+  .equipment-button {
+    font-size: 14px;
+    /* Reduce font size for buttons */
+    padding: 6px 10px;
+    /* Adjust padding */
+  }
+}
+
+/* Media query for 480px and below (Mobile landscape) */
+@media (max-width: 480px) {
+  .head h1 {
+    font-size: 24px;
+    /* Smaller font size for mobile */
+    text-align: center;
+  }
+
+  .categories {
+    gap: 8px;
+    /* Further reduce gap */
+    flex-direction: column;
+    /* Stack categories vertically */
+    align-items: center;
+    /* Center-align categories */
+  }
+
+  .category {
+    flex: 1;
+    /* Full width for each category */
+    max-width: 90%;
+    /* Add some margin to edges */
+    height: 95%;
+  }
+
+  .blogs {
+    gap: 8px;
+    /* Reduce spacing */
+  }
+
+  .blog-item {
+    padding: 10px;
+    /* Reduce padding */
+  }
+
+  .blog-text h3 {
+    font-size: 18px;
+    /* Adjust font size */
+  }
+}
+
+/* Media query for 360px and below (Small mobile screens) */
+@media (max-width: 360px) {
+  .head h1 {
+    font-size: 18px;
+    /* Smaller font for compact screens */
+    text-align: center;
+    /* Center-align text */
+  }
+
+  .categories {
+    gap: 5px;
+    /* Minimal gap between items */
+  }
+
+  .category {
+    flex: 1;
+    /* Full width for each category */
+    max-width: 99%;
+    height: 100%;
+    padding: 8px;
+  }
+
+  .blog-item {
+    padding: 8px;
+    /* Less padding */
+  }
+
+  .blog-text h3 {
+    font-size: 16px;
+    /* Reduce font size for titles */
+  }
+
+  .equipment-button {
+    font-size: 12px;
+    /* Smaller button text */
+    padding: 4px 8px;
+    /* Adjust padding */
+  }
+}
